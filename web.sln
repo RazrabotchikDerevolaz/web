@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "web", ".", "{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52531"
+		Debug.AspNetCompiler.PhysicalPath = "F:\UNITI\Graphic_Imedjik_3D_GIF\Сайт разраба\web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52531\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52531"
+		Release.AspNetCompiler.PhysicalPath = "F:\UNITI\Graphic_Imedjik_3D_GIF\Сайт разраба\web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52531\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52531"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DE3003F-996E-4736-8273-FC5D18F156BB}
+	EndGlobalSection
+EndGlobal
