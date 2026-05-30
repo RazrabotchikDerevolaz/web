@@ -13,21 +13,70 @@
     <header id="site-header">    </header>
 
 
+    <!-- НАШ НОВЫЙ БАННЕР НА ВСЮ ШИРИНУ -->
+    <div class="hero-banner">
+         <!--Ссылка на вашу картинку, например, image1.jpg или фоновый пейзаж--> 
+        <img src="image/top-fon2.png" alt="Главный баннер" class="banner-img">
+    </div>
 
 
     <main>
-        <h1>Привет, мир!ккккккккккккккккккккккккккккккккккк</h1>
+        <!--<h1>Привет, мир!ккккккккккккккккккккккккккккккккккк</h1>
         <p>Это пример простой, современной и адаптивной стартовой страницы.</p>
-        <a href="#" class="btn">Узнать больше</a>
+        <a href="#" class="btn">Узнать больше</a>-->
+        <!-- Главный контейнер для всей сетки картинок -->
+        <div class="image-grid-container">
+
+            <!-- Карточка-ссылка 1 (например, ведет на внешнюю страницу или соцсеть) -->
+            <a href="https://t.me" class="grid-card">
+                <img src="image/image1.jpg" alt="Описание 1" class="grid-card-img">
+                <p class="grid-card-text">Это текст под первой картинкой. Здесь может быть описание услуги или товара.</p>
+            </a>
+
+            <!-- Карточка-ссылка 2 -->
+            <a href="https://vk.com" class="grid-card">
+                <img src="image/image2.jpg" alt="Описание 2" class="grid-card-img">
+                <p class="grid-card-text">Это текст под второй картинкой. Он аккуратно выровнен по центру относительно изображения.</p>
+            </a>
+
+            <!-- Карточка-ссылка 3 (например, ведет на вторую страницу вашего сайта) -->
+            <a href="about.html" class="grid-card">
+                <img src="image/image1.jpg" alt="Описание 3" class="grid-card-img">
+                <p class="grid-card-text">Это текст под третьей картинкой. Вы можете добавлять сколько угодно таких блоков.</p>
+            </a>
+
+            <!-- Карточка-ссылка 2 -->
+            <a href="https://vk.com" class="grid-card">
+                <img src="image/image2.jpg" alt="Описание 2" class="grid-card-img">
+                <p class="grid-card-text">Это текст под второй картинкой. Он аккуратно выровнен по центру относительно изображения.</p>
+            </a>
+
+            <!-- Карточка-ссылка 3 (например, ведет на вторую страницу вашего сайта) -->
+            <a href="about.html" class="grid-card">
+                <img src="image/image1.jpg" alt="Описание 3" class="grid-card-img">
+                <p class="grid-card-text">Это текст под третьей картинкой. Вы можете добавлять сколько угодно таких блоков.</p>
+            </a>
+            <!-- Карточка-ссылка 2 -->
+            <a href="https://vk.com" class="grid-card">
+                <img src="image/image2.jpg" alt="Описание 2" class="grid-card-img">
+                <p class="grid-card-text">Это текст под второй картинкой. Он аккуратно выровнен по центру относительно изображения.</p>
+            </a>
+
+            <!-- Карточка-ссылка 3 (например, ведет на вторую страницу вашего сайта) -->
+            <a href="about.html" class="grid-card">
+                <img src="image/image1.jpg" alt="Описание 3" class="grid-card-img">
+                <p class="grid-card-text">Это текст под третьей картинкой. Вы можете добавлять сколько угодно таких блоков.</p>
+            </a>
+
+        </div>
+
+
     </main>
 
 
 
 
-    <footer id="site-footer">    </footer>
-
-
-
+    <!--<footer id="site-footer">    </footer>-->
     <!-- Скрипт, который автоматически соберет сайт воедино -->
     <script>
         // Функция для загрузки HTML-кода в нужный блок
@@ -42,7 +91,7 @@
 
         // Запускаем загрузку файлов
         loadComponent('site-header', 'header.html');
-        loadComponent('site-footer', 'footer.html');
+        //loadComponent('site-footer', 'footer.html');
     </script>
 
 
