@@ -65,7 +65,7 @@
     "uniqCompNum": 25,
     "versionPublish": "6.1.12",
     "screenshot": "screenshot.png",
-    "publishChangesOnly": true,
+    "publishChangesOnly": false,
     "publishEditFolder": false
   },
   "pages": {
