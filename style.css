@@ -1,0 +1,181 @@
+﻿        /* 1. Сброс базовых отступов */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 2. Оформление фона и шрифта */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 3. Шапка сайта */
+        header {
+            background-color: #ecf96a; /*желтый*/
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Блок для выстраивания картинок в ряд */
+        .header-images-container {
+            display: flex;
+            justify-content: center; /* Центрируем картинки */
+            gap: 20px;               /* Расстояние между картинками */
+            flex-wrap: wrap;         /* МАГИЯ ПЕРЕНОСА: если картинкам тесно, они перейдут на строку ниже */
+     
+        }
+
+        /* МАГИЯ КРУГА: Стили для картинок */
+        .round-img {
+            width: 80px;            /* Одинаковая ширина */
+            height: 80px;           /* Одинаковая высота */
+            border-radius: 50%;      /* Делает картинку идеально круглой */
+            object-fit: cover;       /* Защищает от растягивания */
+            border: 3px solid #ffffff; /* Белая рамка вокруг */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Легкая тень для красоты */
+         
+              /* Вот эта строчка добавляет плавность анимации при наведении */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Добавляем плавность */
+        }
+               
+        /* 4. Главный контент */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+        }
+
+        /* Оформление заголовка h1 */
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        /* Оформление абзацев p */
+        p {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+
+        /* 5. Кнопка действия */
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        /* Кнопка при наведении */
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* 6. Подвал сайта */
+        footer {
+            background-color:  #ecf96a; /*желтый*/
+            padding: 20px; /* Делаем подвал аккуратной неширокой полосой */
+        }
+
+        /* Контейнер, который выстраивает картинки строго по центру в ряд */
+        .footer-social-container {
+            display: flex;
+            justify-content: center; /* Центрирование по горизонтали */
+            align-items: center;     /* Центрирование по вертикали */
+            gap: 25px;               /* Расстояние между картинками */
+            flex-wrap: wrap;         /* МАГИЯ ПЕРЕНОСА: если картинкам тесно, они перейдут на строку ниже */
+        }
+
+        /* Стили для картинок со скруглёнными краями */
+        .rounded-footer-img {
+            width: 120px;             /* Аккуратный небольшой размер для подвала */
+            height: 120px;            /* Высота равна ширине */
+            border-radius: 20px;     /* Скругляет только углы (не делает круг, а делает мягкий квадрат) */
+            object-fit: cover;       /* Защита от деформации */
+            border: 3px solid #ffffff; /* Добавили красивую белую рамку, как в шапке */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Плотная тень для объема */
+            transition: transform 0.2s ease, opacity 0.2s ease; /* Плавная анимация */
+        }
+
+        /* Эффект при наведении мышки */
+        .footer-img-link:hover .rounded-footer-img {
+            transform: translateY(-3px); /* Картинка изящно приподнимается вверх */
+            opacity: 0.9;                /* Слегка меняет яркость */
+        }
+            
+
+        /* Эффект при наведении курсора на картинку-ссылку */
+        .header-link:hover .round-img {
+            transform: scale(1.08); /* Картинка слегка увеличивается в размерах */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Тень становится глубже */
+            cursor: pointer; /* Курсор меняется на "пальчик" */
+        }
+
+
+
+
+
+
+
+
+
+   /* ==========================================
+   АДАПТИВНОСТЬ ДЛЯ РАЗНЫХ УСТРОЙСТВ
+   ========================================== */
+
+/* 📱 Для мобильных телефонов (ширина экрана меньше 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 10px; /* Уменьшаем отступы шапки, чтобы сэкономить место */
+    }
+
+    .header-images-container {
+        gap: 12px; /* Делаем расстояние между иконками чуть меньше */
+    }
+
+    .round-img {
+        width: 50px;  /* Уменьшаем размер иконок, чтобы они не занимали весь экран */
+        height: 50px; /* Высота строго равна ширине, чтобы круг не стал овалом */
+        border-width: 2px; /* Делаем белую рамку чуть тоньше */
+    }
+
+    /* Адаптируем контент сайта, чтобы на телефонах всё смотрелось аккуратно */
+    main {
+        margin: 20px 15px; /* Уменьшаем отступы вокруг главной карточки */
+        padding: 15px;      /* Внутренние отступы карточки тоже делаем меньше */
+    }
+
+    h1 {
+        font-size: 24px; /* Уменьшаем заголовок, чтобы он не переносился некрасиво */
+    }
+}
+
+/* 💻 Для планшетов и небольших ноутбуков (ширина от 601px до 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .round-img {
+        width: 65px;  /* Средний размер иконок для планшетов */
+        height: 65px;
+    }
+    
+    main {
+        margin: 30px auto;
+        max-width: 90%; /* Карточка занимает 90% ширины экрана планшета */
+    }
+}
