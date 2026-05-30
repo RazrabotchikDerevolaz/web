@@ -29,6 +29,10 @@
 </head>
 <body>
   
+<!-- Сюда сама вставится шапка -->
+   <!-- <div id="header-placeholder"></div>
+    -->
+
   <section data-bs-version="5.1" class="header16 cid-tJGs7X2OSn" id="header16-0">
   
 
@@ -1279,6 +1283,11 @@
 
     <!-- Скрипт, который сам загрузит подвал -->
     <script>
+  // Загрузка шапки
+      //  fetch('header.html')
+         //   .then(res => res.text())
+         //   .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
       fetch('footer.html')
         .then(response => response.text())
         .then(data => {
