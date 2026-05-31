@@ -19,7 +19,7 @@ body {
 
 /* 3. Шапка сайта */
 header {
-    background-color: #ecf96a; /*желтый*/
+    background-color: #f2fb98; /*желтый #ecf96a*/
     padding: 7px 10px;
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@ p {
 
 /* 6. Подвал сайта */
 footer {
-    background-color: #ecf96a; /*желтый*/
+    background-color: #f2fb98; /*желтый*/
     padding: 16px; /* Делаем подвал аккуратной неширокой полосой */
     margin: 20px 0px 10px; /* Отступ только снизу */
 }
@@ -176,6 +176,8 @@ footer {
     height: 120px;
     object-fit: cover;
     border-radius: 15px; /* Красивые скруглённые углы */
+    border: 2px solid #d1f7ff; /* Белая рамка вокруг #ffffff */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Легкая тень для красоты */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1.5);
     flex-shrink: 0; /* Запрещает картинке сжиматься, если тексту мало места */
 }
@@ -200,7 +202,7 @@ footer {
 
 /* Вводный абзац */
 .intro-text {
-    font-size: 16px;
+    font-size: 18px;
     color: #555555;
     margin: 0; /* Убираем лишние отступы */
     text-align: justify; /* растягивает текст ровно по ширине блока */
@@ -247,6 +249,14 @@ h3 {
     margin-top: 10px; /*  Отступ сверху, чтобы отделить от предыдущего текста */
     text-align: center;
 }
+
+.link {
+    color: #4340e7; /* Чуть более мягкий оттенок синего */
+    text-decoration: none; /* УБИРАЕМ ПОДЧЕРКИВАНИЕ ТЕКСТА у ссылки */
+}
+
+
+
 
 
 /* Стили для списка с точками */
@@ -538,16 +548,3 @@ hr {
     }
 
 }
-
-
-/*СЧЕТЧИК*/
-.unique-counter {
-    text-align: center;
-    margin-top: 15px;
-    opacity: 0.7; /* Делаем счетчик чуть полупрозрачным, чтобы он не отвлекал от дизайна */
-    transition: opacity 0.2s;
-}
-
-    .unique-counter:hover {
-        opacity: 1; /* При наведении мышки он станет ярким */
-    }
