@@ -176,8 +176,8 @@ footer {
     height: 120px;
     object-fit: cover;
     border-radius: 15px; /* Красивые скруглённые углы */
-    border: 2px solid #d1f7ff; /* Белая рамка вокруг #ffffff */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Легкая тень для красоты */
+    border: 2px solid #ffffff; /* Белая рамка вокруг #ffffff #d1f7ff*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6); /* Легкая тень для красоты */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1.5);
     flex-shrink: 0; /* Запрещает картинке сжиматься, если тексту мало места */
 }
