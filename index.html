@@ -15,68 +15,59 @@
 
     <!-- НАШ НОВЫЙ БАННЕР НА ВСЮ ШИРИНУ -->
     <div class="hero-banner">
-         <!--Ссылка на вашу картинку, например, image1.jpg или фоновый пейзаж--> 
-        <img src="image/top-fon2.png" alt="Главный баннер" class="banner-img">
+        <picture>
+            <!-- Если экран смартфона 600px или меньше — включится мобильный баннер -->
+            <source media="(max-width: 600px)" srcset="image/bannerMin.webp">
+
+            <!-- Если экран большой (компьютер) — включится bannerMax.png -->
+            <img src="image/bannerMax.webp" alt="Главный баннер" class="banner-img">
+        </picture>
     </div>
 
 
     <main>
-        <!--<h1>Привет, мир!ккккккккккккккккккккккккккккккккккк</h1>
-        <p>Это пример простой, современной и адаптивной стартовой страницы.</p>
-        <a href="#" class="btn">Узнать больше</a>-->
         <!-- Главный контейнер для всей сетки картинок -->
         <div class="image-grid-container">
 
-            <!-- Карточка-ссылка 1 (например, ведет на внешнюю страницу или соцсеть) -->
-            <a href="https://t.me" class="grid-card">
-                <img src="image/image1.jpg" alt="Описание 1" class="grid-card-img">
-                <p class="grid-card-text">Это текст под первой картинкой. Здесь может быть описание услуги или товара.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.Derevolazz.Matches" class="grid-card">
+                <img src="image/matchs.png" alt="Спички" class="grid-card-img">
+                <p class="grid-card-text">Эта игра подойдет людям, которые не могут определить, кто из них, выполнит какое либо действие. Суть в том, что каждый игрок вытаскивает спичку, и тот человек, которому «посчастливилось» вытянуть короткую спичку и делает.</p>
             </a>
 
-            <!-- Карточка-ссылка 2 -->
-            <a href="https://vk.com" class="grid-card">
-                <img src="image/image2.jpg" alt="Описание 2" class="grid-card-img">
-                <p class="grid-card-text">Это текст под второй картинкой. Он аккуратно выровнен по центру относительно изображения.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.Derevolaz.Kosti" class="grid-card">
+                <img src="image/kosti.png" alt="Кости" class="grid-card-img">
+                <p class="grid-card-text">Это приложение поможет заменить физические игральные кости на виртуальные, которые будут всегда под рукой.</p>
             </a>
 
-            <!-- Карточка-ссылка 3 (например, ведет на вторую страницу вашего сайта) -->
-            <a href="about.html" class="grid-card">
-                <img src="image/image1.jpg" alt="Описание 3" class="grid-card-img">
-                <p class="grid-card-text">Это текст под третьей картинкой. Вы можете добавлять сколько угодно таких блоков.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.Derevolaz.Derevolaz" class="grid-card">
+                <img src="image/derevolaz.png" alt="Дереволаз" class="grid-card-img">
+                <p class="grid-card-text">Карабкайся вверх, собирая по пути предметы, и зарабатывай очки. С продвижением вверх скорость будет увеличиваться.</p>
             </a>
 
-            <!-- Карточка-ссылка 2 -->
-            <a href="https://vk.com" class="grid-card">
-                <img src="image/image2.jpg" alt="Описание 2" class="grid-card-img">
-                <p class="grid-card-text">Это текст под второй картинкой. Он аккуратно выровнен по центру относительно изображения.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.Derevolaz.FroGGi" class="grid-card">
+                <img src="image/froggi.png" alt="FroGGi" class="grid-card-img">
+                <p class="grid-card-text">
+                    После налета орды саранчи под командованием генерала Остролапа на территории прекрасного королевства Жабондия не осталось пропитания.
+                    В результате чего лягушки вынуждены голодать. Для спасения своего королевства отважный принц Прыгунок отправился в путь в поисках нового места обитания для подданных королевства.
+                </p>
+                <p class="grid-card-text">
+                    <!--<br>-->
+                    Открой все территории, изучи всех насекомых и найди лучшее место для возрождения славного народа Жабондии!
+
+                </p>
             </a>
 
-            <!-- Карточка-ссылка 3 (например, ведет на вторую страницу вашего сайта) -->
-            <a href="about.html" class="grid-card">
-                <img src="image/image1.jpg" alt="Описание 3" class="grid-card-img">
-                <p class="grid-card-text">Это текст под третьей картинкой. Вы можете добавлять сколько угодно таких блоков.</p>
-            </a>
-            <!-- Карточка-ссылка 2 -->
-            <a href="https://vk.com" class="grid-card">
-                <img src="image/image2.jpg" alt="Описание 2" class="grid-card-img">
-                <p class="grid-card-text">Это текст под второй картинкой. Он аккуратно выровнен по центру относительно изображения.</p>
-            </a>
-
-            <!-- Карточка-ссылка 3 (например, ведет на вторую страницу вашего сайта) -->
-            <a href="about.html" class="grid-card">
-                <img src="image/image1.jpg" alt="Описание 3" class="grid-card-img">
-                <p class="grid-card-text">Это текст под третьей картинкой. Вы можете добавлять сколько угодно таких блоков.</p>
+            <a href="https://play.google.com/store/apps/dev?id=7829004971996911289" class="grid-card">
+                <img src="image/labirint.png" alt="Лабиринт" class="grid-card-img">
+                <p class="grid-card-text">В разработке</p>
             </a>
 
         </div>
-
-
     </main>
 
 
-
-
     <!--<footer id="site-footer">    </footer>-->
+    <contact id="contact-bloc">    </contact>
     <!-- Скрипт, который автоматически соберет сайт воедино -->
     <script>
         // Функция для загрузки HTML-кода в нужный блок
@@ -92,9 +83,7 @@
         // Запускаем загрузку файлов
         loadComponent('site-header', 'header.html');
         //loadComponent('site-footer', 'footer.html');
+        loadComponent('contact-bloc', 'contact.html');
     </script>
-
-
-
 </body>
 </html>
