@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web\\kosti.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web|f:\\uniti\\graphic_imedjik_3d_gif\\\u0441\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web\\kosti.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web|solutionrelative:kosti.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web|solutionrelative:labirint.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web|f:\\uniti\\graphic_imedjik_3d_gif\\\u0441\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C97267D5-C1A3-D525-AF52-6DEF5AE71AC1}|F:\\UNITI\\Graphic_Imedjik_3D_GIF\\\u0421\u0430\u0439\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\\web|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -66,8 +66,7 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-05-31T17:20:25.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T17:20:25.462Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "labirint.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-05-31T17:12:51.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T17:12:51.819Z"
             },
             {
               "$type": "Document",
