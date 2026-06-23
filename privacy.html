@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+</head>
+<body>
+
+    <!-- Оставляем теги пустыми, сюда загрузится контент -->
+    <header id="site-header"></header>
+
+    <!-- НАШ НОВЫЙ БАННЕР НА ВСЮ ШИРИНУ -->
+    <div class="hero-banner">
+        <picture>
+            <!-- Если экран смартфона 600px или меньше — включится мобильный баннер -->
+            <source media="(max-width: 600px)" srcset="image/bannerMin.webp">
+
+            <!-- Если экран большой (компьютер) — включится bannerMax.png -->
+            <img src="image/bannerMax.webp" alt="Главный баннер" class="banner-img">
+        </picture>
+    </div>
+
+    <main>
+        <!-- Главный контейнер для всей сетки картинок -->
+        <div class="title-container">
+            <h1>Политика конфиденциальности</h1>
+        </div>
+
+        <p class="intro-text">Настоящая Политика конфиденциальности объясняет, как наш сайт собирает, использует и защищает вашу личную информацию при использовании наших сервисов.</p>
+
+        <hr>
+
+        <section class="site-section">
+            <h2>1. Сбор персональных данных</h2>
+            <p>Мы собираем только один вид персональных данных — ваш **адрес электронной почты (Email)**. Сбор происходит исключительно тогда, когда вы добровольно вводите его в форму на нашем сайте.</p>
+        </section>
+
+        <section class="site-section">
+            <h2>2. Цели использования данных и участие в тестировании</h2>
+            <p>Предоставляя свой адрес электронной почты, вы даете согласие на его использование в следующих целях:</p>
+            <ul style="margin-left: 20px; margin-bottom: 15px; line-height: 1.6;">
+                <li>Для обратной связи с вами и отправки ответов на запросы;</li>
+                <li><strong>Для добавления вашего Email в список участников тестирования (включая закрытые и открытые тестирования) наших мобильных приложений, размещенных на платформе Google Play.</strong></li>
+            </ul>
+            <p>Мы гарантируем, что ваш адрес электронной почты используется строго по назначению, не передается третьим лицам и не используется для рассылки спама.</p>
+        </section>
+
+        <section class="site-section">
+            <h2>3. Ссылки на сторонние сайты (Google Play)</h2>
+            <p>Наш сайт содержит ссылки, которые перенаправляют пользователей на внешний магазин приложений **Google Play**. Мы не контролируем и не несем ответственности за политику конфиденциальности, контент или безопасность платформы Google Play и компании Google LLC.</p>
+            <p>После перехода по внешней ссылке для участия в тестировании или загрузки приложений мы рекомендуем вам ознакомиться с условиями использования и политикой конфиденциальности компании Google.</p>
+        </section>
+
+        <section class="site-section">
+            <h2>4. Согласие с условиями</h2>
+            <p>Используя наш сайт, отправляя свой Email и принимая участие в тестировании приложений, вы выражаете полное согласие с условиями настоящей Политики конфиденциальности.</p>
+        </section>
+
+        <!-- Кнопка возврата на главную -->
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="index.html" class="btn">Вернуться на главную</a>
+        </div>
+    </main>
+
+    <!-- Сюда JavaScript автоматически подгрузит наш общий подвал -->
+    <footer id="site-footer"></footer>
+
+    <p class="email-link">razrabotchikderevolaz@gmail.com</p>
+    <!-- Ссылка на политику конфиденциальности рядом с картинками -->
+    <!--<a href="privacy.html" class="privacy-link">Политика конфиденциальности</a>-->
+
+    <!-- Скрипт сборки шапки и подвала (тот же, что и на главной) -->
+    <script>
+        function loadComponent(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Ошибка загрузки:', error));
+        }
+        loadComponent('site-header', 'header.html');
+        loadComponent('site-footer', 'footer.html');</script>
+
+</body>
+</html>
