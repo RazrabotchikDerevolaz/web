@@ -13,194 +13,194 @@
 
     <hr>
 
-        <main>
-            <div class="title-container" style="margin-top: 30px;">            
-                <h1>Тестирование приложений Google Play</h1>
+    <main>
+        <div class="title-container" style="margin-top: 30px;">
+            <h1>Тестирование приложений Google Play</h1>
+        </div>
+
+                <section class="site-section">
+            <h2>Условия участия в тестировании</h2>
+            <p class="intro-text">Перед отправкой заявки, пожалуйста, внимательно ознакомьтесь с правилами программы тестирования:</p>
+
+            <ul class="qa-rules-list">
+                <li>Ваш Email должен быть привязан к вашему действующему аккаунту <strong>Google Play</strong>.</li>
+                <li>После одобрения заявки вы получите приглашение от разработчика на указанную почту.</li>
+                <li>Вы обязуетесь не распространять установочные файлы (APK) и конфиденциальную информацию о функциях приложения до его официального релиза.</li>
+                <li>Приветствуется отправка отчетов об ошибках и предложений по улучшению интерфейса.</li>
+            </ul>
+        </section>
+
+        <!-- Секция формы подачи заявки -->
+        <section class="site-section">
+            <div class="testing-form">
+                <form id="qaForm" action="#" method="POST" onsubmit="submitForm(event)">
+
+                    <!-- НОВЫЙ БЛОК: Выбор игры для тестирования -->
+                    <div class="form-group">
+                        <label for="gameSelect">Выберите приложение для тестирования:</label>
+                        <select id="gameSelect" name="chosen_game" class="form-input" style="cursor: pointer;">
+                            <option value="ВСЕ приложения">Все приложения</option>
+                            <option value="Froggi">Froggi</option>
+                            <option value="Лабиринт">Лабиринт</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Ваш Email (аккаунт Google Play):</label>
+                        <input type="email" id="userEmail" name="user_email" class="form-input" placeholder="example@gmail.com" required>
+                    </div>
+
+                    <label class="checkbox-group">
+                        <input type="checkbox" id="policyCheckbox" onchange="toggleButton()" required>
+                        <span class="checkbox-text">
+                            Я подтверждаю, что <a href="privacy.html" target="_blank" class="link">Политику конфиденциальности</a> прочел, согласен с условиями тестирования и даю разрешение на обработку моего Email.
+                        </span>
+                    </label>
+
+                    <button type="submit" id="submitBtn" class="btn" disabled>
+                        Отправить запрос на тестирование
+                    </button>
+
+                    <div id="formStatusMessage"></div>
+                </form>
             </div>
+        </section>
 
-            <!-- Используем ваш глобальный класс секции -->
-            <section class="site-section">
-                <h2>Условия участия в тестировании</h2>
-                <p class="intro-text">Перед отправкой заявки, пожалуйста, внимательно ознакомьтесь с правилами программы тестирования:</p>
+        <div style="text-align: center; margin-bottom: 40px;">
+            <a href="index.html" class="btn">На главную</a>
+        </div>
+    </main>
 
-                <!-- ИСПРАВЛЕНО: Применили ваш класс .qa-rules-list вместо инлайн-стилей -->
-                <ul class="qa-rules-list">
-                    <li>Ваш Email должен быть привязан к вашему действующему аккаунту <strong>Google Play</strong>.</li>
-                    <li>После одобрения заявки вы получите приглашение от разработчика на указанную почту.</li>
-                    <li>Вы обязуетесь не распространять установочные файлы (APK) и конфиденциальную информацию о функциях приложения до его официального релиза.</li>
-                    <li>Приветствуется отправка отчетов об ошибках и предложений по улучшению интерфейса.</li>
-                </ul>
-            </section>
+    <footer id="site-footer"></footer>
+    <p class="email-link">razrabotchikderevolaz@gmail.com</p>   
+    <a href="privacy.html" class="privacy-link">Политика конфиденциальности</a>
 
-            <!-- Секция формы подачи заявки -->
-            <section class="site-section">
-                <div class="testing-form">
-                    <form id="qaForm" action="#" method="POST" onsubmit="submitForm(event)">
+    <script>
+        let isEmailJSReady = false;
 
-                        <!-- НОВЫЙ БЛОК: Выбор игры для тестирования -->
-                        <div class="form-group">
-                            <label for="gameSelect">Выберите приложение для тестирования:</label>
-                            <select id="gameSelect" name="chosen_game" class="form-input" style="cursor: pointer;">
-                                <option value="ВСЕ">Все приложения</option>
-                                <option value="Froggi">Froggi</option>
-                                <option value="Лабиринт">Лабиринт</option>
-                            </select>
-                        </div>
+        (function () {
+            if (typeof emailjs !== 'undefined') {
+                emailjs.init("sm44_N0X3Nm5npHX7");
+                isEmailJSReady = true;
+                console.log("EmailJS успешно обнаружен и готов к работе.");
+            } else {
+                console.error("Критическая ошибка: Обновите страницу или попробуйте позже.");
+            }
+        })();
 
+        function toggleButton() {
+            const checkbox = document.getElementById('policyCheckbox');
+            const submitBtn = document.getElementById('submitBtn');
+            if (checkbox && submitBtn) {
+                submitBtn.disabled = !checkbox.checked;
+            }
+        }
 
-                        <div class="form-group">
-                            <label for="userEmail">Ваш Email (аккаунт Google Play):</label>
-                            <input type="email" id="userEmail" name="user_email" class="form-input" placeholder="example@gmail.com" required>
-                        </div>
-
-                        <label class="checkbox-group">
-                            <input type="checkbox" id="policyCheckbox" onchange="toggleButton()" required>
-                            <span class="checkbox-text">
-                                Я подтверждаю, что <a href="privacy.html" target="_blank" class="link">Политику конфиденциальности</a> прочел, согласен с условиями тестирования и даю разрешение на обработку моего Email.
-                            </span>
-                        </label>
-
-                        <button type="submit" id="submitBtn" class="btn" disabled>
-                            Отправить запрос на тестирование
-                        </button>
-
-                        <div id="formStatusMessage"></div>
-                    </form>
-                </div>
-            </section>
-
-            <div style="text-align: center; margin-bottom: 40px;">
-                <a href="index.html" class="btn">На главную</a>
-            </div>
-        </main>
-        <footer id="site-footer"></footer>
-
-        <script>
-            let isEmailJSReady = false;
-
-            (function () {
-                if (typeof emailjs !== 'undefined') {
-                    emailjs.init("sm44_N0X3Nm5npHX7");
-                    isEmailJSReady = true;
-                    console.log("EmailJS успешно обнаружен и готов к работе.");
-                } else {
-                    console.error("Критическая ошибка: Обновите страницу или попробуйте позже.");
-                }
-            })();
-
-            function toggleButton() {
-                const checkbox = document.getElementById('policyCheckbox');
-                const submitBtn = document.getElementById('submitBtn');
-                if (checkbox && submitBtn) {
-                    submitBtn.disabled = !checkbox.checked;
-                }
+        function submitForm(event) {
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
             }
 
-            function submitForm(event) {
-                if (event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
+            const submitBtn = document.getElementById('submitBtn');
+            const emailInput = document.getElementById('userEmail');
+            const statusMsg = document.getElementById('formStatusMessage');
 
-                const submitBtn = document.getElementById('submitBtn');
-                const emailInput = document.getElementById('userEmail');
-                const statusMsg = document.getElementById('formStatusMessage');
+            if (!emailInput || !submitBtn) return false;
 
-                if (!emailInput || !submitBtn) return false;
+            if (statusMsg) {
+                statusMsg.innerText = '';
+            }
 
+            const emailValue = emailInput.value.trim().toLowerCase();
+            if (!emailValue.endsWith('@gmail.com')) {
                 if (statusMsg) {
-                    statusMsg.innerText = '';
+                    statusMsg.style.color = '#e74c3c';
+                    statusMsg.innerText = 'Ошибка: Для Google Play необходим аккаунт @gmail.com';
                 }
-
-                const emailValue = emailInput.value.trim().toLowerCase();
-                if (!emailValue.endsWith('@gmail.com')) {
-                    if (statusMsg) {
-                        statusMsg.style.color = '#e74c3c';
-                        statusMsg.innerText = 'Ошибка: Для Google Play необходим аккаунт @gmail.com';
-                    }
-                    return false;
-                }
-
-                if (!isEmailJSReady) {
-                    if (statusMsg) {
-                        statusMsg.style.color = '#e74c3c';
-                        statusMsg.innerText = 'Ошибка: Обновите страницу или попробуйте позже.';
-                    }
-                    return false;
-                }
-
-                submitBtn.disabled = true;
-                submitBtn.innerText = 'Отправка...';
-
-                // 1. Считываем, какую именно игру выбрал пользователь в выпадающем списке
-                const gameSelect = document.getElementById('gameSelect');
-                const chosenGame = gameSelect ? gameSelect.value : 'Не указана';
-
-                // 2. Передаем и почту, и название игры в EmailJS
-                const templateParams = {
-                    user_email: emailInput.value,
-                    chosen_game: chosenGame
-                };
-
-                emailjs.send('service_lfzonra', 'template_drpalvu', templateParams)
-                    .then(function (response) {
-                        console.log("Успешно отправлено!", response);
-                        showSuccessFinal(statusMsg, submitBtn);
-                    })
-                    .catch(function (error) {
-                        console.error("Ошибка при отправке:", error);
-                        if (statusMsg) {
-                            statusMsg.style.color = '#e74c3c';
-                            statusMsg.innerText = 'Ошибка. Обновите страницу или попробуйте позже.';
-                        }
-                        submitBtn.disabled = false;
-                        submitBtn.innerText = 'Отправить запрос на тестирование';
-                        toggleButton();
-                    });
-
                 return false;
             }
 
-            function showSuccessFinal(statusMsg, submitBtn) {
-                const form = document.getElementById('qaForm');
-                if (form) form.reset();
-
-                toggleButton();
-                submitBtn.innerText = 'Отправлено';
-
+            if (!isEmailJSReady) {
                 if (statusMsg) {
-                    statusMsg.style.color = '#2ecc71';
-                    statusMsg.innerText = 'Заявка успешно отправлена! Перенаправление на главную...';
+                    statusMsg.style.color = '#e74c3c';
+                    statusMsg.innerText = 'Ошибка: Обновите страницу или попробуйте позже.';
                 }
-
-                setTimeout(() => {
-                    window.location.href = 'index.html';
-                }, 4000);
+                return false;
             }
 
-            function loadComponent(elementId, filePath) {
-                const targetElement = document.getElementById(elementId);
-                if (!targetElement) return Promise.resolve();
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Отправка...';
 
-                return fetch(filePath)
-                    .then(response => {
-                        if (!response.ok) throw new Error(`Статус ответа: ${response.status}`);
-                        return response.text();
-                    })
-                    .then(data => {
-                        targetElement.innerHTML = data;
-                    })
-                    .catch(error => console.error(`Ошибка загрузки компонента ${filePath}:`, error));
-            }
+            // 1. Считываем, какую именно игру выбрал пользователь в выпадающем списке
+            const gameSelect = document.getElementById('gameSelect');
+            const chosenGame = gameSelect ? gameSelect.value : 'Не указана';
 
-            document.addEventListener("DOMContentLoaded", () => {
-                Promise.all([
-                    loadComponent('site-header', 'header.html'),
-                    loadComponent('site-footer', 'footer.html')
-                ]).then(() => {
+            // 2. Передаем и почту, и название игры в EmailJS
+            const templateParams = {
+                user_email: emailInput.value,
+                chosen_game: chosenGame
+            };
+
+            emailjs.send('service_lfzonra', 'template_drpalvu', templateParams)
+                .then(function (response) {
+                    console.log("Успешно отправлено!", response);
+                    showSuccessFinal(statusMsg, submitBtn);
+                })
+                .catch(function (error) {
+                    console.error("Ошибка при отправке:", error);
+                    if (statusMsg) {
+                        statusMsg.style.color = '#e74c3c';
+                        statusMsg.innerText = 'Ошибка. Обновите страницу или попробуйте позже.';
+                    }
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = 'Отправить запрос на тестирование';
                     toggleButton();
                 });
+
+            return false;
+        }
+
+        function showSuccessFinal(statusMsg, submitBtn) {
+            const form = document.getElementById('qaForm');
+            if (form) form.reset();
+
+            toggleButton();
+            submitBtn.innerText = 'Отправлено';
+
+            if (statusMsg) {
+                statusMsg.style.color = '#2ecc71';
+                statusMsg.innerText = 'Заявка успешно отправлена! Перенаправление на главную...';
+            }
+
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 4000);
+        }
+
+        function loadComponent(elementId, filePath) {
+            const targetElement = document.getElementById(elementId);
+            if (!targetElement) return Promise.resolve();
+
+            return fetch(filePath)
+                .then(response => {
+                    if (!response.ok) throw new Error(`Статус ответа: ${response.status}`);
+                    return response.text();
+                })
+                .then(data => {
+                    targetElement.innerHTML = data;
+                })
+                .catch(error => console.error(`Ошибка загрузки компонента ${filePath}:`, error));
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            Promise.all([
+                loadComponent('site-header', 'header.html'),
+                loadComponent('site-footer', 'footer.html')
+            ]).then(() => {
+                toggleButton();
             });
-        </script>
+        });
+    </script>
 </body>
 </html>
