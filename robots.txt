@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /web/
+
+Sitemap: https://razrabotchikderevolaz.github.io/web/sitemap.xml

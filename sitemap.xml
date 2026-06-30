@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+
+	<!-- Главная страница -->
+	<url>
+		<loc>https://razrabotchikderevolaz.github.io/web/</loc>
+		<lastmod>2026-06-30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+	<!-- Заявка на тестирование -->
+	<url>
+		<loc>https://razrabotchikderevolaz.github.io/web/testing</loc>
+		<lastmod>2026-06-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<!-- Проект: Кости -->
+	<url>
+		<loc>https://razrabotchikderevolaz.github.io/web/kosti</loc>
+		<lastmod>2026-06-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<!-- Проект: Дереволаз -->
+	<url>
+		<loc>https://razrabotchikderevolaz.github.io/web/derevolaz</loc>
+		<lastmod>2026-06-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<!-- Проект: Фрогги -->
+	<url>
+		<loc>https://razrabotchikderevolaz.github.io/web/froggi</loc>
+		<lastmod>2026-06-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<!-- Проект: Спички (Matchs) -->
+	<url>
+		<loc>https://razrabotchikderevolaz.github.io/web/matchs</loc>
+		<lastmod>2026-06-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<!-- Проект: Лабиринт -->
+	<url>
+		<loc>https://razrabotchikderevolaz.github.io/web/labirint</loc>
+		<lastmod>2026-06-30</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<!-- Политика конфиденциальности -->
+	<url>
+		<loc>https://razrabotchikderevolaz.github.io/web/privacy</loc>
+		<lastmod>2026-06-30</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.3</priority>
+	</url>
+
+</urlset>
