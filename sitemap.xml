@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-	<!-- Главная страница -->
-	<url>
-		<loc>https://derevolaz.of.by/</loc>
-		<lastmod>2026-06-30</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
-	</url>
 
-	<!-- Заявка на тестирование -->
-	<url>
-		<loc>https://derevolaz.of.by/testing</loc>
-		<lastmod>2026-06-30</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.9</priority>
-	</url>
+  <!-- Главная страница -->
+  <url>
+    <loc>https://derevolaz.of.by/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-	<!-- Проект: Кости -->
-	<url>
-		<loc>https://derevolaz.of.by/kosti</loc>
-		<lastmod>2026-06-30</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
+  <!-- Заявка на тестирование -->
+  <url>
+    <loc>https://derevolaz.of.by/testing</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-	<!-- Проект: Дереволаз -->
-	<url>
-		<loc>https://derevolaz.of.by/derevolaz</loc>
-		<lastmod>2026-06-30</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
+  <!-- Проект: Кости -->
+  <url>
+    <loc>https://derevolaz.of.by/kosti</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-	<!-- Проект: Фрогги -->
-	<url>
-		<loc>https://derevolaz.of.by/froggi</loc>
-		<lastmod>2026-06-30</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
+  <!-- Проект: Дереволаз -->
+  <url>
+    <loc>https://derevolaz.of.by/derevolaz</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-	<!-- Проект: Спички (Matchs) -->
-	<url>
-		<loc>https://derevolaz.of.by/matchs</loc>
-		<lastmod>2026-06-30</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
+  <!-- Проект: Фрогги -->
+  <url>
+    <loc>https://derevolaz.of.by/froggi</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-	<!-- Проект: Лабиринт -->
-	<url>
-		<loc>https://derevolaz.of.by/labirint</loc>
-		<lastmod>2026-06-30</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
+  <!-- Проект: Спички (Matchs) -->
+  <url>
+    <loc>https://derevolaz.of.by/matchs</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-	<!-- Политика конфиденциальности -->
-	<url>
-		<loc>https://derevolaz.of.by/privacy</loc>
-		<lastmod>2026-06-30</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.3</priority>
-	</url>
+  <!-- Проект: Лабиринт -->
+  <url>
+    <loc>https://derevolaz.of.by/labirint</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Политика конфиденциальности -->
+  <url>
+    <loc>https://derevolaz.of.by/privacy</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
 </urlset>
