@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://razrabotchikderevolaz.github.io/web/sitemap.xml
+Sitemap: https://derevolaz.of.by/sitemap.xml

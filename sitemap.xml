@@ -3,7 +3,7 @@
 	
 	<!-- Главная страница -->
 	<url>
-		<loc>https://razrabotchikderevolaz.github.io/web/</loc>
+		<loc>https://derevolaz.of.by/</loc>
 		<lastmod>2026-06-30</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
@@ -11,7 +11,7 @@
 
 	<!-- Заявка на тестирование -->
 	<url>
-		<loc>https://razrabotchikderevolaz.github.io/web/testing</loc>
+		<loc>https://derevolaz.of.by/testing</loc>
 		<lastmod>2026-06-30</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
@@ -19,7 +19,7 @@
 
 	<!-- Проект: Кости -->
 	<url>
-		<loc>https://razrabotchikderevolaz.github.io/web/kosti</loc>
+		<loc>https://derevolaz.of.by/kosti</loc>
 		<lastmod>2026-06-30</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
@@ -27,7 +27,7 @@
 
 	<!-- Проект: Дереволаз -->
 	<url>
-		<loc>https://razrabotchikderevolaz.github.io/web/derevolaz</loc>
+		<loc>https://derevolaz.of.by/derevolaz</loc>
 		<lastmod>2026-06-30</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
@@ -35,7 +35,7 @@
 
 	<!-- Проект: Фрогги -->
 	<url>
-		<loc>https://razrabotchikderevolaz.github.io/web/froggi</loc>
+		<loc>https://derevolaz.of.by/froggi</loc>
 		<lastmod>2026-06-30</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
@@ -43,7 +43,7 @@
 
 	<!-- Проект: Спички (Matchs) -->
 	<url>
-		<loc>https://razrabotchikderevolaz.github.io/web/matchs</loc>
+		<loc>https://derevolaz.of.by/matchs</loc>
 		<lastmod>2026-06-30</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
@@ -51,7 +51,7 @@
 
 	<!-- Проект: Лабиринт -->
 	<url>
-		<loc>https://razrabotchikderevolaz.github.io/web/labirint</loc>
+		<loc>https://derevolaz.of.by/labirint</loc>
 		<lastmod>2026-06-30</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
@@ -59,7 +59,7 @@
 
 	<!-- Политика конфиденциальности -->
 	<url>
-		<loc>https://razrabotchikderevolaz.github.io/web/privacy</loc>
+		<loc>https://derevolaz.of.by/privacy</loc>
 		<lastmod>2026-06-30</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.3</priority>
